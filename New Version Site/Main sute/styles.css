@@ -11,6 +11,10 @@ a {
     text-decoration: none;
 }
 
+body {
+    background: #000;
+}
+
 .body {
     background: #000;
     padding: 100px;

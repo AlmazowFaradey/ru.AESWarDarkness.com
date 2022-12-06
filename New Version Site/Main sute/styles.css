@@ -94,7 +94,7 @@ body {
     align-items: center;
  }
 
- select, option, textarea {
+ select, option, textarea, input {
     border: none;
     background: #444;
     padding: 10px;
@@ -102,9 +102,15 @@ body {
     width: 250px;
 }
 
-select:hover, option:hover, textarea:hover {
+input {
+    margin-bottom: 20px;
+}
+
+select:hover, option:hover, textarea:hover, input:hover {
     border: none;
     color: #ffff98;
+    background: #393939;
+    transition: all .5s;
 }
 
 a:hover {
@@ -170,4 +176,9 @@ a:hover {
     width: 75%;
     display: block;
     margin: 0 auto;
+}
+
+h1.helpTP {
+    margin-left: 25px;
+    margin-top: 10px;
 }

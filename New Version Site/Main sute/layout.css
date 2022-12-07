@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+* {
+    font-family: 'Play', sans-serif;
+}
+
+/* ----------------------------------------------------------- */
+/* Главное Меню */
+/* ----------------------------------------------------------- */
+
+.main_menu_layout {
+    width: 100%;
+    min-height: 58px;
+    margin: 0px auto;
+}
+
+.main_menu {
+    width: 100%;
+}
+
+.main_menu.fixed {
+    position: fixed;
+    top: 0px;
+    z-index: 99;
+}
+
+.main_menu.fixed #block-menu-primary-links>ul {
+    background: #121212;
+}
+
+.main_menu #block-menu-primary-links>ul {
+    width: 100%;
+    height: 58px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+    margin: 0px;
+    padding: 0px;
+    background: #000;
+}
+
+.main_menu #block-menu-primary-links>ul>li {
+    width: auto;
+    height: inherit;
+    display: flex;
+    flex-grow: 1;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    background-color: #222;
+}
+
+.main_menu #block-menu-primary-links>ul>li::before {
+    width: 1px;
+    height: 50%;
+    display: block;
+    position: absolute;
+    left: -1px;
+    top: 50%;
+    background: var(--item-color);
+    transform: translateY(-50%);
+}
+
+.main_menu #block-menu-primary-links>ul>li.first::before,
+.main_menu #block-menu-primary-links>ul>li:last-child::before,
+.main_menu #block-menu-primary-links>ul>li:nth-last-child(2)::before {
+    width: 0px;
+}
+
+.main_menu.fixed #block-menu-primary-links>ul>li.first::before {
+    width: 1px;
+}
+
+.main_menu #block-menu-primary-links>ul>li:nth-child(n+2),
+.main_menu.fixed #block-menu-primary-links>ul>li.menu_logo+li {
+    margin-left: 1px;
+}
+
+.main_menu #block-menu-primary-links>ul>li.menu_logo+li {
+    margin-left: 0px;
+}
+
+.main_menu #block-menu-primary-links>ul>li>a {
+    width: 100%;
+    height: inherit;
+    display: block;
+    box-sizing: border-box;
+    padding: 0px 12px 0px 24px;
+    color: #fff;
+    font: bold 16px/58px 'Play', sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.main_menu #block-menu-primary-links ul li:hover a {
+    color: #ffff98;
+    background-color: #292929;
+}
+
+.main_menu #block-menu-primary-links ul li.menu_logo {
+    width: 0px;
+    position: relative;
+    flex-grow: 0;
+    overflow: hidden;
+    transition: width 300ms ease;
+    cursor: pointer;
+}

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Play', sans-serif;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  padding: 0px 20px;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#slide-1 {
+  background-image: url(https://media.discordapp.net/attachments/916955589194711070/942160759692083230/unknown.png?width=842&height=473);
+}
+
+#slide-2 {
+  background-image: url(https://media.discordapp.net/attachments/935768145120100432/1047413609417936936/Faradey_Scientist2.png?width=840&height=473);
+}
+
+#slide-3 {
+  background-image: url(https://media.discordapp.net/attachments/888709867026669579/1002773192299003904/unknown.png?width=840&height=473);
+}
+
+#slide-4 {
+  background-image: url(https://media.discordapp.net/attachments/935768145120100432/1047413609724133397/Zone.png?width=869&height=473);
+}
+
+#slide-5 {
+  background-image: url(https://media.discordapp.net/attachments/935768145120100432/1047413608692334633/Gate_Street_tex.png?width=840&height=473);
+}
+
+#slide-6 {
+  background-image: url(https://media.discordapp.net/attachments/935768145120100432/1047919119556677632/Base_NewMenu_2024_3.png?width=840&height=473);
+}
+
+#slide-7 {
+  background-image: url(https://media.discordapp.net/attachments/935768145120100432/1041700298844020736/3b9769d86e55f3b8_3.png?width=605&height=473);
+}
+
+#slide-8 {
+  background-image: url(https://media.discordapp.net/attachments/935768145120100432/1050408154581708890/shturmovick.png?width=473&height=473);
+}
+
+#slide-9 {
+  background-image: url(https://media.discordapp.net/attachments/1023164178896277545/1039899431308378152/image.png?width=842&height=473);
+}
+
+.slide {
+  height: 80vh;
+  border-radius: 20px;
+  margin: 5px;
+  cursor: pointer;
+  color: #fff;
+  flex: 0.3;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+
+.slide h3 {
+  position: absolute;
+  font-size: 24px;
+  top: 90%;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+.slide.active {
+  flex: 10;
+}
+
+.slide.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
